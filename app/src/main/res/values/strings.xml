@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Greeting Card</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>
