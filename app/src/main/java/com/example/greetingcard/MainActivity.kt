@@ -1,6 +1,7 @@
 package com.example.greetingcard
 
 import android.content.Intent
+//import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -55,6 +56,13 @@ fun Greeting(name: String, id: Number, modifier: Modifier = Modifier) {
             context.startActivity(intent)
         }) {
             Text("Start Activity Implicitly")
+        }
+
+        Button(onClick = {
+            val intent = Intent(context, ThirdActivity::class.java)
+            context.startActivity(intent)
+        }) {
+            Text("View Image Activity")
         }
     }
 
